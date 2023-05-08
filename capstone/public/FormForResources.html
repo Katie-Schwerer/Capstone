@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Homepage</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Homepage</a>
+    <div class="right">
+      <a href="languagequiz.html">Where to Start Coding</a>
+      <a href="resource.html">Search For Resources</a>
+      <a href="FormForResources.html">Add a Resource</a>
+    </div>
+  </nav>
+  <form>
+    <h1>Add to Event Database</h1>
+    
+    <label>
+      <p>What is the name of this event or camp</p>
+      <input type="text" id="name">
+    </label><br>
+
+    <br>
+
+    <label>
+      <p>What company is hosting the event?</p>
+      <input type="text" id="company">
+    </label><br>
+    
+    <br>
+
+    <p>What is this event or camp</p>
+    <select name="event" id="event">
+      <option value="bootcamp">Bootcamp</option>
+      <option value="hackathon">Hackathon</option>
+      <option value="day_camp">Summer Camp</option>
+      <option value="conference">Conference</option>
+      <option value="event">Event</option>
+    </select><br>
+
+    <br>
+    
+    <p>What age group is this event for?</p>
+    <select name="age" id="age">
+      <option value="kids">Kids</option>
+      <option value="teens">Teens</option>
+      <option value="young_adult">Young Adult</option>
+      <option value="adult">Adult</option>
+      <option value="senior_citizen">Senior Citizen</option>
+      <option value="all_ages">All Age</option>
+    </select><br>
+    <br>
+
+    <p>Link to Website</p>
+    <input type="link" id="link"><br>
+    <br>
+
+    <p><input type="button" value="Add to Database"></p>
+  </form>
+    
+  <script src="form.js"></script>
+
+
+  <script src="https://replit.com/public/js/replit-badge.js" theme="yellow" defer></script> 
+</body>
+
+</html>

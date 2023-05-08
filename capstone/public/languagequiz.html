@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Quiz</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <a href="index.html">Homepage</a>
+    <div class="right">
+      <a href="languagequiz.html">Where to Start Coding</a>
+      <a href="resource.html">Search For Resources</a>
+      <a href="FormForResources.html">Add a Resource</a>
+    </div>
+  </nav>
+  <form method="post" action="results.php">
+    <h1>Programming Language Quiz</h1>
+
+    <h4>What age group do you fall under?</h4>
+    <label>
+      <input type="radio" name="age" value="kids">
+      12 or Younger
+    </label><br>
+    <label>
+      <input type="radio" name="age" value="teens">
+      Teenager
+    </label><br>
+    <label>
+      <input type="radio" name="age" value="young_adult">
+      Young Adult
+    </label><br>
+    <label>
+      <input type="radio" name="age" value="adult">
+      Adult
+    </label><br>
+    <label>
+      <input type="radio" name="age" value="senior_citizen">
+      Senior Citizen
+    </label><br>
+
+    <br>
+
+    <h4>What school subject do you enjoy?</h4>
+    <label>
+      <input type="radio" name="subject" value="visual">
+      Visual Art
+    </label><br>
+    <label>
+      <input type="radio" name="subject" value="english">
+      English/Language Arts
+    </label><br>
+    <label>
+      <input type="radio" name="subject" value="math">
+      Math
+    </label><br>
+    <label>
+      <input type="radio" name="subject" value="science">
+      Science
+    </label><br>
+
+    <br>
+
+    <h4>What activities do you enjoy?</h4>
+    <label>
+      <input type="radio" name="activity" value="books">
+      Reading Books
+    </label><br>
+    <label>
+      <input type="radio" name="activity" value="watch">
+      Watching TV
+    </label><br>
+    <label>
+      <input type="radio" name="activity" value="games">
+      Playing Video Games
+    </label><br>
+    <label>
+      <input type="radio" name="activity" value="sport">
+      Playing Sports
+    </label><br>
+
+    <br>
+
+    <h4>What type of learner are you?</h4>
+    <label>
+      <input type="radio" name="learn" value="visual">
+      Visual
+    </label><br>
+    <label>
+      <input type="radio" name="learn" value="hand">
+      Hands-On
+    </label><br>
+    <label>
+      <input type="radio" name="learn" value="audio">
+      Auditory
+    </label><br>
+
+    <br>
+
+    <h4>How would you describe yourself?</h4>
+    <label>
+      <input type="radio" name="describe" value="creative">
+      Creative
+    </label><br>
+    <label>
+      <input type="radio" name="describe" value="adventurous">
+      Adventurous
+    </label><br>
+    <label>
+      <input type="radio" name="describe" value="disciplined">
+      Disciplined
+    </label><br>
+    <label>
+      <input type="radio" name="describe" value="analytical">
+      Analytical
+    </label><br>
+
+    <br>
+
+    <h4>What kind of challenge are you looking for?</h4>
+    <label>
+      <input type="radio" name="challenge" value="easy">
+      Easy
+    </label><br>
+    <label>
+      <input type="radio" name="challenge" value="medium">
+      Medium
+    </label><br>
+    <label>
+      <input type="radio" name="challenge" value="hard">
+      Hard
+    </label><br>
+
+    <br>
+
+    <h4>What's your name?</h4>
+        <label>Name <input type="text" name="name" value=""></label>
+
+    <p><input type="button" value="Get a Language"></p>
+
+
+  </form>
+
+  <div class="secretContainer"></div>
+  <script src="script.js"></script>
+
+</body>
+
+</html>
