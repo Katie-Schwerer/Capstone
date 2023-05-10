@@ -12,7 +12,7 @@
 
 <body>
   <nav>
-    <a href="index.html">Homepage</a>
+    <a href="index.html">WICSHub</a>
     <div class="right">
       <a href="languagequiz.html">Where to Start Coding</a>
       <a href="resource.html">Search For Resources</a>
@@ -24,20 +24,20 @@
     
     <label>
       <p>What is the name of this event or camp</p>
-      <input type="text" id="name">
+      <input type="text" id="name" required>
     </label><br>
 
     <br>
 
     <label>
       <p>What company is hosting the event?</p>
-      <input type="text" id="company">
+      <input type="text" id="company" required>
     </label><br>
     
     <br>
 
     <p>What is this event or camp</p>
-    <select name="event" id="event">
+    <select name="event" id="event" required>
       <option value="bootcamp">Bootcamp</option>
       <option value="hackathon">Hackathon</option>
       <option value="day_camp">Summer Camp</option>
@@ -48,7 +48,7 @@
     <br>
     
     <p>What age group is this event for?</p>
-    <select name="age" id="age">
+    <select name="age" id="age" required>
       <option value="kids">Kids</option>
       <option value="teens">Teens</option>
       <option value="young_adult">Young Adult</option>
@@ -59,7 +59,7 @@
     <br>
 
     <p>Link to Website</p>
-    <input type="link" id="link"><br>
+    <input type="link" id="link" required><br>
     <br>
 
     <p><input type="button" value="Add to Database"></p>
