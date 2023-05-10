@@ -19,25 +19,25 @@
       <a href="FormForResources.html">Add a Resource</a>
     </div>
   </nav>
-  <form>
+  <form method="get" action="/landing">
     <h1>Add to Event Database</h1>
     
     <label>
       <p>What is the name of this event or camp</p>
-      <input type="text" id="name" required>
+      <input type="text" id="name">
     </label><br>
 
     <br>
 
     <label>
       <p>What company is hosting the event?</p>
-      <input type="text" id="company" required>
+      <input type="text" id="company">
     </label><br>
     
     <br>
 
     <p>What is this event or camp</p>
-    <select name="event" id="event" required>
+    <select name="event" id="event">
       <option value="bootcamp">Bootcamp</option>
       <option value="hackathon">Hackathon</option>
       <option value="day_camp">Summer Camp</option>
@@ -48,7 +48,7 @@
     <br>
     
     <p>What age group is this event for?</p>
-    <select name="age" id="age" required>
+    <select name="age" id="age">
       <option value="kids">Kids</option>
       <option value="teens">Teens</option>
       <option value="young_adult">Young Adult</option>
@@ -59,13 +59,11 @@
     <br>
 
     <p>Link to Website</p>
-    <input type="link" id="link" required><br>
+    <input type="link" id="link"><br>
     <br>
 
-    <p><input type="button" value="Add to Database"></p>
+    <p><input type="submit" value="Add to Database"></p>
   </form>
-    
-  <script src="form.js"></script>
 
 
   <script src="https://replit.com/public/js/replit-badge.js" theme="yellow" defer></script> 

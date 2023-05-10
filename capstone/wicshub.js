@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const { MongoClient } = require('mongodb');
 
-app.listen(3055);
+app.listen(3001);
 
 app.get("", index);
 app.get('/', index);
@@ -51,38 +51,9 @@ async function landing(req, res) {
         console.error(error);
         res.status(500).send(createBasePage("<p>Sorry. There was an error processing your request</p>\n"));
     }
-	showValues(res, body);
 }
 
-function showValues(res, body) {
-	const uri = "mongodb://director:ladies@localhost:4260/girls_events_db";
-    const client = new MongoClient(uri);
-	
-	try {
-	    client.connect();
-		console.log("Connected");
-		const coll = client.db("girls_events_db").collection("events");
-		const cursor = coll.find();
-		const results = cursor.toArray();
-		if (results.length > 0) {
-			console.log("All Entries");
-			res.write(`<p>${body}</p>\n`);
-			
-			res.write("<table>\n");
-			
-			results.forEach((result, i) => {
-				console.log(`<tr><td>${result.name}</td><td>${result.company}</td><td>${result.event_type}</td></tr>`);
-			});
-			
-			res.write("</table>\n");
-		} else {
-			console.log("Nothing was found");
-		}
-	} finally {
-		client.close();
-		console.log("Done");
-	}
-}
+
 
 async function saveToMongo(urlObj) {
     const uri = "mongodb://director:ladies@localhost:4260/girls_events_db";
